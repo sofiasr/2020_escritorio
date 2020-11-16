@@ -1,0 +1,260 @@
+Parcial 2 - Modelo
+¿Para que se utiliza la firma digital?
+
+Generar datos aleatoreos
+Garantizar la confidencialidad de los datos
+Garantizar la autenticidad de los datos
+Ninguna de las anteriores
+Una firma digital es un mecanismo criptográfico que permite al receptor de un mensaje firmado digitalmente identificar a la entidad originadora de dicho mensaje (autenticación de origen y no repudio), y confirmar que el mensaje no ha sido alterado desde que fue firmado por el originador (integridad).
+
+¿Cual de los siguientes algoritmos es denominado AES?
+
+Serpent
+Rijndael
+IDEA
+DES
+Advanced Encryption Standard (AES), también conocido como Rijndael (pronunciado “Rain Doll” en inglés), es un esquema de cifrado por bloques adoptado como un estándar de cifrado por el gobierno de los Estados Unidos. Desde 2006, el AES es uno de los algoritmos más populares usados en criptografía simétrica.
+
+¿Que condiciona el libre uso de los algoritmos?
+
+Ninguna de estas opciones
+Que sean publicos
+Que tengan patentes en vigencia
+Que sean privados
+¿Cual de los siguientes elementos no corresponde a una funcion de negocio SAMM?
+
+Gobierno
+Implementacion
+Verificacion
+Diseño
+Construcción
+Elementos que si corresponden:
+Gobernabilidad: Está centrada en la definición de la estrategia, en los procesos y políticas relacionadas a cómo una organización debe gestionar el SDLC (Software Development Life Cycle).
+
+Construcción: Se refiere a los procesos y actividades que la organización debe seguir para el desarrollo de la aplicación, lo cual incluye la administración del producto, recolección de requerimientos, especificaciones de la arquitectura a alto nivel, definición del diseño detallado e implementación de la aplicación.
+
+Verificación: Se enfoca a los procesos relacionados a la revisión y pruebas de los artefactos producidos durante el desarrollo del software; incluye aseguramiento de calidad y diferentes tipos de pruebas.
+
+Implementación: Se refiere a las actividades relacionadas a la liberación de la aplicación.
+
+¿Cual de los siguientes elementos no corresponde a una caracteristica positiva de los sistemas criptográficos simetricos?
+
+Robustez
+Velocidad de cifrado
+Longitud del mensaje limitada por la implementación
+Sencillez de implementación
+La criptografía de clave simétrica (en inglés symmetric key cryptography), también llamada criptografía de clave secreta, es un método criptográfico en el cual se usa una misma clave para cifrar y descifrar mensajes en el emisor y el receptor. Las dos partes que se comunican han de ponerse de acuerdo de antemano sobre la clave a usar. Una vez que ambas partes tienen acceso a esta clave, el remitente cifra un mensaje usando la clave, lo envía al destinatario, y éste lo descifra con la misma clave.
+
+¿Cual de los siguientes NO es un modo de cifrado de bloques?
+
+CBC - Cipher Block Chaining
+OFB - Output feedback
+CFB - Cipher Feedback
+Ninguna de las anteriores
+Cifrados de Bloque: cifran el mensaje dividiendo el flujo en bloques de k bits. Cada bloque se corresponde con otro diferente. Por ejemplo, un bloque con k=3 “010” se podría corresponder con “110”. Un ejemplo de cifrado de bloque es el algoritmo AES.
+
+¿Cual de las siguientes NO es una propiedad de la firma digital?
+
+Va ligada indisolublemente al mensaje
+Se genera en base a la clave publica del destinatario
+Solo puede ser generada por su legitimo titular
+Es publicamente verificable
+¿Que significa el acrónimo CMM?
+
+Capacity Model Metrics
+Capability Maturity Model
+Capability Model and Metrics
+Capacity Measure Model
+El Modelo de Madurez de Capacidades o CMM (Capability Maturity Model), es un modelo de evaluación de los procesos de una organización. Fue desarrollado inicialmente para los procesos relativos al desarrollo e implementación de software por la Universidad Carnegie-Mellon para el Software Engineering Institute (SEI).
+
+El SEI es un centro de investigación y desarrollo patrocinado por el Departamento de Defensa de los Estados Unidos de América y gestionado por la Universidad Carnegie-Mellon. “CMM” es una marca registrada del SEI.
+
+¿Que norma define la metodología SCRUM?
+
+Ninguna de las anteriores
+ISO 25000
+ISO/IEC 9126
+ISO/IEC 14598
+Determine el mensaje original para el siguiente cifrado obtenido mediante el cifrado de XOR solamente.
+Valor cifrado: 101110110010
+Contraseña: 011100110110
+Se conoce la existencia de los siguientes valores binarios 100111000011 y 110011110011
+
+101010100011
+110010000100
+001110110110
+111100111010
+¿A que se denomina Padding?
+
+Al método para autenticar mensajes con algoritmos asimetricos
+Al método para completar el inicio de un bloque de datos
+al método que permite generar una distorisión entre los distintos bloques
+Al método para completar el final de un bloque de datos
+¿Sobre qué tocnología están desarrollados los Web Services?
+
+XML/SOAP
+HTTPS
+AES
+HTML
+Identifique a que corresponde la siguiente definición:
+
+Se define como una función o método para generar un valor que represente de manera casi unívoca a un dato".
+
+Funcion de encriptación de datos
+Funcion de descifrado de datos
+Funcion hash
+Funcion de firma digital
+Indique cual es el orden creciente en base al nivel de seguridad de las siguientes técnicas de autenticación de usuarios.
+
+Basica y segura, Basada en formas, Integrada, Fuerte, Basada en certificado.
+Basada en formas, Basaica y segura, Integrada, Fuerte, Basada en certificado.
+Basica y segura, Integrada, Basada en formas, Basada en certificado, Fuerte
+Basica y segura, Basada en formas, Integrada, Basada en certificado, Fuerte
+Basada en formas, Básica y segura, Integrada, Basada en certificado, Fuerte
+¿Cual de estos elementos corresponde a un nivel que no define requerimientos detallados de verificación en ASVS?
+
+Advanced
+Cursory
+Opportunistic
+Standart
+****ASVS: Normaliza el rango de cobertura y el nivel de rigurosidad disponible en el mercado cuando se realiza la verif de seguridad de aplicaciones web.
+
+¿Que cantidad de PAs están definidos para el SSE-CMM?
+
+24
+16
+18
+22
+¿Que modelo de autorización utiliza un sistema UNIX/Linux convencional para manejar sus archivos?
+
+Mandatory Access Control (MAC)
+Discretionary Access Control (DAC)
+Role Based Access Control (RBAC)
+Ninguna de las anteriores.
+Marque la respuesta correcta segun indica el siguiente mensaje generado mediante el cifrado del Cesar:
+
+"od uhvsxhvwd fruuhfwd frqwlhqh od sdodeud ixhjr"
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+la respuesta correcta contiene la palabra fuego
+
+Los fideos tienen salsa
+Hay estrellas en el cielo
+La torre es demasiado alta
+El fuego se apagará pronto
+¿Que mecanismo adiciona criptografía al proceso de hash con el fin de incorporar autentiación a la seguridad del mismo?
+
+MD5
+MAC
+AES
+Ninguna de las anteriores
+¿Cual de los siguientes algoritmos se basa en la dificultad para factorizar grandes numeros?
+
+Ninguna de estas opciones
+RSA
+AES
+Elgamal
+¿Cuales de los siguientes puntos NO es un objetivo de la administración de usuarios y (…)?
+
+Los usuarios no pueden aceder o utilizar funcionaliadades administrativas.
+Las funciones de nivel de administrador están seregadas apropiadamente de la actividad de usuario.
+Los usuarios transmiten información de manera cifrada y confidencial
+Proveer la necesaria auditoria y trazabilidad de funcionalidades administrativas.
+Dada la clave pública (p,y,n) y la clave privada (p,x,n) Indique a que algoritmo corresponden las siguientes definiciones de cifrado
+
+a = p^n (mod n)
+b = y^k m (mod n)
+
+ElGamal
+AES
+RSA
+Ninguna de estas opciones
+¿Que mecanismo adiciona criptografía al proceso de hash con el fin de incorporar autenticación a la seguridad del mismo?
+
+MAC
+Ninguna
+MD5
+AES
+¿Cual es el significado de SSL?
+
+Secure Sockets Layer
+Simple Socket layer
+Secure socket level
+Standart Socket layer
+¿Cual de los siguientes elementos NO se corresponde con una propiedad de la calidad de uso?
+
+Seguridad
+Ninguna de las opciones
+Productividad
+Eficacia
+Satisfacción
+Indique cual es la definición correcta de j segun la siguiente representación de un sistema criptográfico Dj (Ej (m)) = m
+
+Representa el conjunto de todos los mensajes sin sifrar
+Representa el conjunto de transformaciones de cifrado
+Representa el conjunto de todos los posiles mensajes cifrados
+Representa el conjunto de claves que se pueden emplear
+Indique a que corresponde la siguiente definición:
+
+“Se define como una funcion o método para generar un valor que representa de manera casi univoca a un dato.”
+
+Funcion de descifrado de datos
+Funcion de firma digital
+Funcion hash
+Funcion de encriptación de datos
+¿Cual de los siguientes datos NO está contenido en los campos de un certificado X500?
+
+Número de serie
+Nombre del sujeto
+Clave privada del sujeto
+Clave pública del sujeto
+En criptografía, X.509 es un estándar UIT-T para infraestructuras de claves públicas (en inglés, Public Key Infrastructure o PKI).1​ X.509 especifica, entre otras cosas, formatos estándar para certificados de claves públicas y un algoritmo de validación de la ruta de certificación. Su sintaxis, se define empleando el lenguaje ASN.1 (Abstract Syntax Notation One), y los formatos de codificación más comunes son DER (Distinguish Encoding Rules) o PEM (Privacy Enhanced Mail).
+
+¿Cual de los siguientes puntos no es de interes para el manejo de sesiones de estado?
+
+Seguridad de transporte
+Ataques de autenticación de sesión
+Paginas y credenciales en formularios
+Entropia de credencial de sesión
+¿Cual de estos elementos no corresponde a la lista de requerimientos de verificación de ASVS2014?
+
+Cryptography at Rest
+Authentication
+Data protection
+Communication
+Mobile
+Performance
+¿Cual de los siguientes elementos NO se corresponde con una propiedad de la calidad en uso?
+
+Productividad
+Seguridad
+Satisfacción
+Eficacia
+Ninguna de las anteriores
+Productividad, seguridad, eficacia y satisfacción
+
+¿Que establece el marco legal para el uso de la Firma Digital en la republica Argentina?
+
+El pacto de San Jose de Costa Rica
+La ley 25.506
+La ley 24.449
+La constitución nacional
+¿Que caracteristica de calidad interna/externa NO está contemplada de SQuaRE?
+
+Portabilidad
+Mantenibilidad
+Ninguna de las anteriores
+Fiabilidad
+Funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad, portabilidad.
+
+¿A que tipo de algoritmo corresponde el cifrado del Cesar?
+
+Cifrado por transposición de grupos
+Cifrado por sustitución
+Cifrado Asimétrico
+Cifrado de simetrico de flujo
+¿Cual de estos elementos corresponde a la escala que se reperesentan los niveles de madurez de SAMM?
+
+A,B,C
+Bajo, Medio, Alto
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+0, 1, 2, 3

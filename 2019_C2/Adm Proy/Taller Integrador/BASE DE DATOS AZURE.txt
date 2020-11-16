@@ -1,0 +1,22 @@
+COLOR QUE USAREMOS
+Verde: #73B349
+
+-----------------------------------------------------------------------------------
+COMO CONECTARSE A LA BD AZURE
+
+Nombre del servidor: todaviaserverdb.database.windows.net
+Autenticacion: Autenticacion de SQL Server
+Usuario: administrador
+Contraseña: Unlam2019
+
+IMPORTANTE!
+Deben pasarme sus IPs Publicas sino no Azure no deja conectarse al servidor!!
+
+Como carancho se la IP?
+https://www.cual-es-mi-ip.net/
+
+pongan sus IPs aca:
+
+Mike: 
+Lucas:
+Jose: 

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        IAP - Segundo Parcial - Resumen - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="IAP---Segundo-Parcial---Resumen"><a class="anchor hidden-xs" href="#IAP---Segundo-Parcial---Resumen" title="IAP---Segundo-Parcial---Resumen"><span class="octicon octicon-link"></span></a><strong>IAP - Segundo Parcial - Resumen</strong></h1><br><h1 id="Unidad-6"><a class="anchor hidden-xs" href="#Unidad-6" title="Unidad-6"><span class="octicon octicon-link"></span></a>Unidad 6</h1><h2 id="Gestión-de-Configuración-del-Software"><a class="anchor hidden-xs" href="#Gestión-de-Configuración-del-Software" title="Gestión-de-Configuración-del-Software"><span class="octicon octicon-link"></span></a>Gestión de Configuración del Software:</h2><p>Se puede definir como una disciplina cuya misión es controlar la evolución de un sistema de software. Es el arte de identificar, organizar y controlar las modificaciones que sufre un software que construye un equipo de programación. El objetivo es maximizar la productividad minimizando los errores.</p><p>El éxito del proyecto depende de la correcta ejecución de 4 tipos de funciones:</p><ol>
+<li>Gestión del proyecto:<br>
+Incluye fundamentalmente la estimación, planificación y seguimiento del proyecto, y la organización, dirección y gestión de recursos Humanos.</li>
+<li>Desarrollo técnico:<br>
+Actividades de ingeniería del software a lo largo de todo el ciclo de vida del producto (Analisis, diseño, codificación)</li>
+<li>Sistema de gestión de configuración:<br>
+Se suele considerar a la gestión de configuración como una actividad de la garantía de calidad.</li>
+</ol><p>La gestión de configuración se debe realizar a lo largo de todo el ciclo de vida del producto. Tanto en el desarrollo como en el mantenimiento, hasta que el producto se retira.</p><p>Objetivo de las actividades:</p><ol>
+<li>Establecer y mantener la integridad de los productos generados durante un proyecto de desarrollo de software y a lo largo de todo el ciclo de vida del producto.</li>
+<li>Evaluar y controlar los cambios sobre ellos, es decir, controlar la evolución del sistema de software.</li>
+<li>Facilitar la visibilidad sobre el producto.</li>
+</ol><h3 id="¿Qué-significa-la-integridad-de-un-producto-software"><a class="anchor hidden-xs" href="#¿Qué-significa-la-integridad-de-un-producto-software" title="¿Qué-significa-la-integridad-de-un-producto-software"><span class="octicon octicon-link"></span></a>¿Qué significa la integridad de un producto software?</h3><p>Significa que el producto cumple con las siguientes condiciones:</p><ol>
+<li>Satisfacer las necesidades del usuario.</li>
+<li>Cumple los requisitos de rendimiento.</li>
+<li>Se puede trazar su evolución desde que se concibió, y a través de todas las fases de su ciclo de vida.</li>
+</ol><p>Para conseguir estos objetivos, la Gestión de configuración plantea la realización de ciertas actividades. La definición de estándar de gestión de Configuración del Software, tal y como aparece en el estándar de IEEE, incluye las siguientes actividades:</p><ol>
+<li>
+<p>Identificación de la configuración:<br>
+Consiste en identificar la estructura del producto, sus componentes y el tipo de estos, y en hacerlos únicos y accesibles de alguna forma.</p>
+</li>
+<li>
+<p>Control de cambios de configuración:<br>
+Consiste en controlar las versiones y entregas de un producto y los cambios que se producen en el a lo largo del ciclo de vida.</p>
+</li>
+<li>
+<p>Generación de informes de estado:<br>
+Consiste en informar acerca del estado de los componentes de un producto y de las solicitudes de cambio, recogiendo estadísticas acerca de la evolución del producto.</p>
+</li>
+<li>
+<p>Auditoria de la configuración:<br>
+Consiste en validar la completitud de un producto y la consistencia entre sus componentes, asegurando que el producto es lo que el usuario quiere.</p>
+</li>
+</ol><p>Los sistemas que automatizan la gestión de configuración suelen incluir algunas funciones adicionales, lo que nos lleva a ampliar la definición de estándar con las siguientes actividades:</p><ul>
+<li>
+<p>Construccion:<br>
+Consiste en gestionar la compilación y enlazado de los distintos componentes del producto software de una forma lo mas eficiente posible.</p>
+</li>
+<li>
+<p>Control del trabajo en equipo:<br>
+Consiste en controlar las interacciones que se producen entre los multiples desarrolladores de un producto, sobre todo cuando deben compartir ciertos componentes del producto.</p>
+</li>
+<li>
+<p>Control de Versiones:<br>
+Consiste en mantener un registro histórico de las diferentes versiones por las que pasan los componentes de un producto, que permita la recuperación de cualquiera de ellas.</p>
+</li>
+<li>
+<p>Gestion de problemas:<br>
+Consiste en realizar un seguimiento de la evolución de los problemas que afectan al producto.</p>
+</li>
+</ul><p>La gestión de configuración tiene gran influencia sobre otros aspectos del desarrollo de software como son:</p><ul>
+<li>
+<p>Las metodologias:<br>
+Las actividades de gestión de configuración deberán integrarse con la metodología de desarrollo que utilice la empresa. Su planificación dependerá de las fases que establezca la metodología, los productos que generen, etc.</p>
+</li>
+<li>
+<p>El entorno de desarrollo de software.</p>
+</li>
+<li>
+<p>El modelo de proceso de software:<br>
+Debido a que afecta a la forma en que los desarrolladores hacen su trabajo, imponiendo políticas y procedimientos y supervisando la forma en que se realiza este trabajo. Desempeña un papel importante a la hora de conseguir incrementar el nivel de madurez del proceso software de una organización.</p>
+</li>
+<li>
+<p>Calidad del producto de software:<br>
+Contribuye a mantener la integridad del producto.</p>
+</li>
+<li>
+<p>La organización:<br>
+Por lo general, se suele implementar una solución global, que afecta a toda la organización y que requiere del establecimiento de nuevos roles y responsabilidades que deberán integrarse en la organización del proyecto.</p>
+</li>
+</ul><p>ECS (Elemento de configuración de software):<br>
+Es la unida de trabajo para la GCS (gestión de configuración de software).</p><ul>
+<li>Código fuente.</li>
+<li>Documentación.</li>
+<li>Datos internos y externos.</li>
+</ul><p>Para cada proyecto concreto se debe determinar que se va a considerar como ECS.<br>
+Un ECS debe ser un elemento que se pueda definir y controlar de forma separada, es decir, debe ser una unidad en si mismo.</p><h3 id="Línea-base"><a class="anchor hidden-xs" href="#Línea-base" title="Línea-base"><span class="octicon octicon-link"></span></a>Línea base:</h3><p>Se puede definir una línea base como un punto de referencia en el proceso de desarrollo del software que queda marcado por la aprobación de uno o varios elementos de configuración del Software, mediante una revisión técnica formal.<br>
+También puede definirse como un elemento que va a servir como base para otros desarrollos posteriores y que solamente puede cambiarse a través de un proceso formal de control de cambios.<br>
+Un elemento puede ser modificado antes de formar parte de la línea base. Una vez en la línea base solo un procedimiento formal puede verificar o realizar un cambio.</p><h3 id="Versión"><a class="anchor hidden-xs" href="#Versión" title="Versión"><span class="octicon octicon-link"></span></a>Versión:</h3><p>Se puede definir una versión como una instancia de un elemento de configuración, en un momento dado del proceso de desarrollo, que es almacenada en un repositorio y que puede ser recuperada en cualquier momento para su uso o modificación.<br>
+A las distintas versiones que surgen en el tiempo se las suele llamar Revisiones.</p><h3 id="Cadena-de-Revisión"><a class="anchor hidden-xs" href="#Cadena-de-Revisión" title="Cadena-de-Revisión"><span class="octicon octicon-link"></span></a>Cadena de Revisión:</h3><p>Conjunto modificaciones sobre una revisión que forma una cadena. Cada revisión en la cadena es una actualización, y viene a sustituir una revisión anterior.<br>
+Cada revisión debe ser identificada de forma única, siendo el método mas común un esquema numerico.</p><h3 id="Control-de-cambios"><a class="anchor hidden-xs" href="#Control-de-cambios" title="Control-de-cambios"><span class="octicon octicon-link"></span></a>Control de cambios:</h3><p>Es la actividad mas importante y su objetivo es proporcionar un mecanismo riguroso para controlar los cambios, partiendo de la base de que los cambios se van a producir. Normalmente combine procedimientos humanos y el uso de herramientas automaticas.</p><p>Se pueden considerar dos tipos de cambios:</p><ol>
+<li>Corrección de un defecto:<br>
+Los clientes tienden a clasificar todos los cambios en esta categoría.</li>
+<li>Mejora del sistema:<br>
+Los programadores, los suelen clasificar en este apartado.</li>
+</ol><p>De suelen establecer varios niveles de control de cambios:</p><ol>
+<li>
+<p>Control de cambios informal:<br>
+Antes de que el ECS forme parte de la línea base, quien haya desarrollado el ECS podrá realizar cambios sobre él.</p>
+</li>
+<li>
+<p>Control de cambios a nivel del proyecto o semi-formal:<br>
+Una vez que el ECS pasa la revisión técnica formal y forma parte de la línea base, para que el encargado del desarrollo pueda realizar cambios debe recibir la aprobación de:</p>
+<ul>
+<li>El director del proyecto, si el cambio es local.</li>
+<li>El Comité de control de cambios, si el cambio tiene algún impacto sobre otros ECS.</li>
+</ul>
+</li>
+<li>
+<p>Control de cambios formal:<br>
+Se suele adoptar una vez que se empieza a comercializar el producto, cuando se transfieren los ECS a la Biblioteca Maestra. Todo cambio deberá ser aprobado por el Comité de Cambios.</p>
+</li>
+</ol><h3 id="Comité-de-cambios"><a class="anchor hidden-xs" href="#Comité-de-cambios" title="Comité-de-cambios"><span class="octicon octicon-link"></span></a>Comité de cambios:</h3><p>Persona o grupo de personas encargado de tomar las decisiones finales acerca del estado y la prioridad de las peticiones de cambio.</p><h3 id="Auditoria-de-la-configuración"><a class="anchor hidden-xs" href="#Auditoria-de-la-configuración" title="Auditoria-de-la-configuración"><span class="octicon octicon-link"></span></a>Auditoria de la configuración:</h3><p>La auditoria se plantea y responde a las siguientes preguntas:</p><ul>
+<li>¿Se hizo el cambio especificado en la OCI? ¿Se incorporaron modificaciones adicionales?</li>
+<li>¿Se llevo a cabo una revisión técnica formal para evaluar la correcion tecnica?</li>
+<li>¿Se siguió el proceso del software y se aplicaron adecuadamente los estandares de igenieria del software?</li>
+<li>¿Se resaltaron los cambios en el ECS, especificando la fecha del cambio y el autor?</li>
+<li>¿Se siguieron los procedimientos de GCS para señalar el cambio, registrarlo y divulgarlo?</li>
+<li>¿Se actualizaron adecuadamente todos los ECSs relacionados?</li>
+</ul><h3 id="Informes-de-estado"><a class="anchor hidden-xs" href="#Informes-de-estado" title="Informes-de-estado"><span class="octicon octicon-link"></span></a>Informes de estado:</h3><p>Responde a las siguientes preguntas:<br>
+¿Qué paso? ¿Quién lo hizo? ¿Cuándo paso? ¿Qué mas se vio afectado?<br>
+Desempeña un papel vital en el éxito del proyecto de desarrollo. Cuando aparece involucrada mucha gente es muy fácil que se de el síndrome de “mano izquierda ignora lo que hace la mano derecha”. Puede que dos personas intenten modificar el mismo ECS con intenciones diferentes o conflictivas.<br>
+Los informes de estado ayudan a eliminar este tipo de problemas, mejorando la comunicación entre todas las personas involucradas.</p><h1 id="Unidad-7"><a class="anchor hidden-xs" href="#Unidad-7" title="Unidad-7"><span class="octicon octicon-link"></span></a>Unidad 7</h1><h2 id="Calidad"><a class="anchor hidden-xs" href="#Calidad" title="Calidad"><span class="octicon octicon-link"></span></a>Calidad:</h2><p>Todo lo que hacemos en este ámbito es en pos de buscar construir aplicaciones de calidad.</p><p>¿Qué es la calidad?</p><ul>
+<li>Conformidad con los requisitos y confianza en el funcionamiento.</li>
+<li>Adecuación para su uso.</li>
+<li>La suma de todos aquellos aspectos o características de un producto o servicio que influyen en sus capacidades para satisfacer las necesidades, expresadas o implícitas.</li>
+<li>Capacidad del producto software para satisfacer los requisitos establecidos.</li>
+<li>Grado con el cual el cliente o usuario percibe que el software satisface sus expectativas.</li>
+</ul><p>Satisfacción de usuario = producto que funciona + buena calidad + entrega dentro del presupuesto y plazo.</p><p>La calidad depende de los requisitos o necesidades que se buscan satisfacer. Por esto la calidad va a depender de la comparación entre los requisitos preestablecidos y el producto desarrollado.</p><p>Parte de los requisitos se encuentran explicitos (dentro de la especificación de los requisitos) pero otra parte quedara de forma implícita (el usuario sabe lo que quiere pero no siempre es capaz de transmitirlo correctamente). Es fundamental definir explícitamente lo que significa calidad de software.</p><p>En el desarrollo de software, la calidad del diseño incluye el grado en el que el diseño cumple las funciones y características especificadas en el modelo de requerimientos.  La calidad de la conformidad esta centrada en el grado en el que la implementación se apega al diseño y en el que el sistema resultante cumple sus metas de requerimientos y desempeño.</p><p>Calidad del software:<br>
+Proceso eficaz de software que se aplica de manera que crea un producto útil que proporciona valor medible a quienes lo producen y a quienes lo utilizan.</p><ol>
+<li>
+<p>Un proceso eficaz de software:<br>
+Establece la infraestructura que da apoyo a cualquier esfuerzo de elaboración de un producto de software de calidad.</p>
+</li>
+<li>
+<p>Un producto útil entrega contenido, funciones y características que el usuario final desea:<br>
+Es fundamental que estos activos sean entregados de forma confiable y libre de errores. Un producto útil siempre satisface los requerimientos establecidos en forma explicita por los participantes.</p>
+</li>
+<li>
+<p>Al agregar valor para el productor y para el usuario de un producto, el software de alta calidad proporciona beneficios a la organización que lo produce y a la comunidad de usuarios finales. La organización encargada de producit el software obtiene el valor agregado porque el software de alta calidad es fácilmente mantenido, produce menos errores y requiere poca asistencia al cliente.<br>
+Los usuarios obtienen valor agregado porque la aplicación provee una capacidad útil en forma tal que agiliza procesos de negocios.</p>
+</li>
+</ol><p>Calidad de producto:<br>
+La calidad del producto de software se diferencia de la calidad de otros productos por sus características propias:</p><ol>
+<li>El software es un producto mental:<br>
+No se encuentra restringido por las leyes de la física o por los limites de los procesos de fabricación. Al ser abstracto, su calidad también lo es.</li>
+<li>Se desarrolla, no se fabrica:<br>
+El costo esta fundamentalmente en el proceso de diseño, no en la producción. Los errores también son introducidos en el diseño, no en la producción.</li>
+<li>El software no se deteriora con el tiempo:<br>
+No es susceptible a los defectos del entorno, y su curva de fallos es muy diferente a la del hardware. Todos los problemas que surjan durante el mantenimiento estuvieron siempre presentes. No se generan nuevos errores.</li>
+<li>Es artesanal en gran medida:<br>
+El software en su mayoría se construye a medida.</li>
+<li>El mantenimiento del software:<br>
+Es mucho mas complejo que el del hardware. Cada fallo en el software implica un error en el diseño o en el proceso mediante el cual se tradujo el diseño en código ejecutable.</li>
+<li>Es engañosamente fácil realizar cambios pero los efectos de estos cambios se pueden propagar de forma explosiva e incontrolada.</li>
+</ol><p>Calidad el proceso:</p><p>1.Gestion de calidad:<br>
+Determinación y aplicación de las políticas de calidad de la empresa.</p><ol start="2">
+<li>Garantía o aseguramiento de la calidad:<br>
+Conjunto de actividades planificadas y sistemáticas necesarios para proporcionar confianza en que el producto de software satisface los requisitos dados de calidad.</li>
+</ol><p>Modelos de Calidad:</p><p>En los modelos de calidad, la misma se encuentra definida de forma jerárquica.<br>
+Tienen por lo general una estructura de tres niveles:</p><p>Factores (11)<br>
+Criterios (23)<br>
+Métricas (41)</p><ol>
+<li>En este nivel (el mas alto) se encuentran los factores de calidad, que representan la calidad desde el punto de vista del usuario. Características que componen la calidad. También se les llama atributos de calidad externa.</li>
+<li>Cada uno de los factores se descompone en un conjunto de criterios de calidad. Son atributos que contribuyen al aspecto de la calidad. Se trata de una visión de la calidad desde el punto de vista del producto software. También se les llama atributos de calidad internos.</li>
+<li>Para cada uno de los criterios de calidad se definen entonces un conjunto de metricas (medidas cuantitativas de una característica especifica del producto).</li>
+</ol><p>El modelo de calidad permite que esta se convierta en algo concreto, que se puede definir, medir y planificar.</p><p>Factores de la calidad:</p><ol>
+<li>
+<p>Operación del producto:<br>
+1.1 Correccion:<br>
+Grado en el que un programa satisface sus especificaciones y en el que cumple con los objetivos de la misión del cliente.<br>
+1.2 Confiabilidad:<br>
+Grado en el que se espera que un programa cumpla con sus funciones y con la precisión requerida.<br>
+1.3 Usabilidad:<br>
+Esfuerzo que se requiere para aprender, operar y preparar las entradas e interpretar las salidas de un programa.<br>
+1.4 Integridad:<br>
+Cantidad de recursos de computo y de código requeridos por un programa para llevar a cabo su función.<br>
+1.5 Eficiencia:<br>
+Calidad de recursos de computo y de código requeridos para un programa para llevar a cabo su función.</p>
+</li>
+<li>
+<p>Revisión el producto:<br>
+2.1 Facilidad de recibir mantenimiento:<br>
+Esfuerzo requerido para detectar y corregir un error en un programa.<br>
+2.2 Flexibilidad:<br>
+Esfuerzo necesario para modificar un programa que ya opera.<br>
+2.3 Susceptibilidad de someterse a pruebas:<br>
+Esfuerzo que se requiere para probar un programa a fin de garantizar que realiza la función que se pretende.</p>
+</li>
+<li>
+<p>Transición del producto:</p>
+</li>
+</ol><p>3.1 Portabilidad:<br>
+Esfuerzo que se necesita para transferir el programa de un ambiente de hardware o software a otro.<br>
+3.2 Reusabilidad:<br>
+Grado en elque un programa puede volver a ser utilizado en otra aplicación.<br>
+3.3 Interoperabilidad:<br>
+Esfuerzo requerido para acoplar un sistema con otro.</p><p>Enfoques cualitativos:<br>
+Tanto la dimensión de la calidad como los factores de la calidad de un software son enfoques cualitativos de la calidad.</p><p>El dilema de la calidad:<br>
+En un extremo se encuentra presenta la construiccion artesanal, la cual no cuenta con procesos de software complejos mientras que del otro extremo contamos con una construcción de software con procesos complejos y gran cantidad de pareas a realizar.<br>
+El punto entre estos dos extremos genera un desarrollo “lo suficientemente bueno”.</p><p>Suficientemente bueno quiere decir que el producto cuenta con las funciones y características de alta calidad que desean los usuarios, pero al mismo tiempo mas especializadas que contienen errores conocidos.</p><p>¿Como se logra la calidad?</p><ol>
+<li>Métodos de ingeniería de software:<br>
+Es necesario entender el problema que se quiere resolver. También debe ser capaz de crear un diseño acorde al problema y que al mismo tiempo tenga características que lleven al sofrware a las dimensiones y factores de calidad ya vistos.</li>
+<li>Tecnicas de administración de proyectos:<br>
+Si se utilizan estimaciones para verificar que las fechas pueden ser cumplidas, se comprenden las dependencias de las actividades programadas y los equipos evitaran utilizar atajos, la planeación del riesgo se llava a cabo de manera que los problemas no alienten el caos, por lo que la calidad del software estará influida de manera positiva.</li>
+</ol><p>Control de calidad:<br>
+Incluye un conjunto de acciones de ingeniería de software que ayudan a asegurar que todo producto del trabajo cumpla sus metas de calidad. Se realiza un control sobre los modelos, garantizando que esten completos y que son consistentes. El código es inspeccionado con el objetivo de descubrir errores antes de que comiencen las pruebas, las cuales pasan una serie de etapas buscando errores de procesamiento lógico, manipulación  de datos y comunicación con la interfaz.</p><p>Aseguramiento de la calidad:<br>
+Establece la infraestructura de apoyo a los métodos solidos de la ingeniería de software, la administración de proyectos y las acciones de control de calidad, todo de importancia crucial si se trata de elaborar software de alta calidad. Consiste en un conjunto de funciones de auditoria y reportes para evaluar la eficacia y completitud de las acciones de control de calidad.<br>
+Su meta es proporcionar datos para mantener un control sobre la calidad del producto, proporcionando perspectiva y confianza.</p><p>Control de calidad: (IMPORTANTE)<br>
+Técnicas de revisión o revisiones técnicas:<br>
+El objetivo es encontrar errores durante el proceso a fin de que no se conviertan en defectos después de liberar el software. El beneficio obvio de las revisiones técnicas es el descubrimiento temprano de los errores, de modo que no se propaguen a la siguiente etapa del proceso de software.<br>
+La diferencia principal entre los controles estáticos y los dinámicos es que los dinámicos requieren la ejecución del objeto que se esta controlando.</p><p>Controles estáticos:</p><ol>
+<li>Automáticos:<br>
+1.1 Análisis estático automático.<br>
+1.1.1 Compiladores.<br>
+1.1.2 Análisis de flujo.<br>
+1.1.3 Ejecución simbólica.<br>
+1.2 Verificación formal.</li>
+<li>Manuales<br>
+2.1 Informales<br>
+2.1.1 Comprobación de escritorio<br>
+2.1.2 Revisión por pares.<br>
+2.2 Disciplinados<br>
+2.2.1 Revisión<br>
+2.2.2 Auditorias</li>
+</ol><p>Controles dinámicos:</p><ol>
+<li>Modular.</li>
+<li>Integración.</li>
+<li>Sistema (completo de todo el sistema)</li>
+<li>Aceptación (entorno más cercano a la producción)</li>
+<li>Regresión (que funciona todo lo nuevo y lo viejo)</li>
+</ol><p>Métodos de prueba:<br>
+Caja blanca<br>
+Caja negra</p><p>Aseguramiento de la calidad:<br>
+Conjunto de actividades que permiten garantizar que un producto hace las cosas de forma correcta en el momento correcto y de la forma correcta.</p><p>SQA (Software Quality Assurance) / GSC (Garantia de calidad de software): (IMPORTANTE)</p><ol>
+<li>Enfoque de gestión de calidad.</li>
+<li>Tecnología de ingeniería del software efectiva (métodos y herramientas).</li>
+<li>Revisiones técnicas formales que se aplican durante el proceso del software.</li>
+<li>Una estrategia de pruebas.</li>
+<li>El control de la documentación del software y de los cambios realizados.</li>
+<li>Un procedimiento que asegure un ajuste a los estándares de desarrollo del software.</li>
+<li>Mecanismos de medición y de generación de informes.</li>
+</ol><p>¿Cuando se hace la calidad del software?<br>
+La misma no se genera en el momento en el que se genero el código; la garantía de la calidad del software es una actividad que se aplica a lo largo de todo el proceso de software. Cuanto antes se detecten los problemas en el software, mejor<br>
+Hay dos clases de problemas:</p><ol>
+<li>Errores: problemas de implementación</li>
+<li>Fallas de software: Problemas de arquitectura en el diseño.</li>
+</ol><p>¿Quién hace la calidad?<br>
+Todos los StakeHolders. El grupo de ACS debe ver el software desde el punto de vista del cliente ¿Cumple con los factores de calidad?<br>
+El grupo de garantía de calidad debe definir el tipo de control de calidad que se va a realizar, pero por lo general no son los responsables de efectuar los controles, los cuales serán realizados por otros miembros del equipo de control de calidad.</p><p>Las principales tareas son:</p><ol>
+<li>Planificación de la calidad:<br>
+Seleccionar, clasificar y ponderar las propiedades de calidad que se van a establecer como requisitos, con especto al producto y con respecto al proceso. Determinaran las metas a alcanzar.</li>
+<li>Supervisión de la calidad:<br>
+Consiste en supervisar y corregir, si es necesario, el trabajo que se esta realizando, con el objetivo de llegar a satisfacer los requisitos establecidos.</li>
+<li>Construcción de la calidad:<br>
+Actividades constructivas son aquellas que sirven para -construir- la calidad, son actividades preventivas cuyo objetivo es evitar la introducción de errores mediante la puesta en practica de ciertos principios, métodos, formalismos y herramientas.</li>
+</ol><p>Elementos del aseguramiento de la calidad:</p><ol>
+<li>Estándares.</li>
+<li>Revisiones y auditorias.</li>
+<li>Pruebas.</li>
+<li>Colección y análisis de errores.</li>
+<li>Administración del cambio.</li>
+<li>Educación.</li>
+<li>Administración de proveedores.</li>
+<li>Administración de la seguridad.</li>
+<li>Administración del riesgo.</li>
+</ol><p>Sistema de calidad:<br>
+El tipo y numero de actividades de garantía de calidad que es necesario adoptar en un proyecto o en una organización concreta depende del tamaño y complejidad de los productos de software que se estén desarrollando.</p><hr><h6 id="tags-Introducción-a-la-administración-de-proyecto"><a class="anchor hidden-xs" href="#tags-Introducción-a-la-administración-de-proyecto" title="tags-Introducción-a-la-administración-de-proyecto"><span class="octicon octicon-link"></span></a>tags: <code>Introducción a la administración de proyecto</code></h6></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#IAP---Segundo-Parcial---Resumen" title="IAP - Segundo Parcial - Resumen">IAP - Segundo Parcial - Resumen</a></li>
+<li><a href="#Unidad-6" title="Unidad 6">Unidad 6</a><ul class="nav">
+<li><a href="#Gestión-de-Configuración-del-Software" title="Gestión de Configuración del Software:">Gestión de Configuración del Software:</a><ul class="nav">
+<li><a href="#¿Qué-significa-la-integridad-de-un-producto-software" title="¿Qué significa la integridad de un producto software?">¿Qué significa la integridad de un producto software?</a></li>
+<li><a href="#Línea-base" title="Línea base:">Línea base:</a></li>
+<li><a href="#Versión" title="Versión:">Versión:</a></li>
+<li><a href="#Cadena-de-Revisión" title="Cadena de Revisión:">Cadena de Revisión:</a></li>
+<li><a href="#Control-de-cambios" title="Control de cambios:">Control de cambios:</a></li>
+<li><a href="#Comité-de-cambios" title="Comité de cambios:">Comité de cambios:</a></li>
+<li><a href="#Auditoria-de-la-configuración" title="Auditoria de la configuración:">Auditoria de la configuración:</a></li>
+<li><a href="#Informes-de-estado" title="Informes de estado:">Informes de estado:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Unidad-7" title="Unidad 7">Unidad 7</a><ul class="nav">
+<li><a href="#Calidad" title="Calidad:">Calidad:</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#IAP---Segundo-Parcial---Resumen" title="IAP - Segundo Parcial - Resumen">IAP - Segundo Parcial - Resumen</a></li>
+<li><a href="#Unidad-6" title="Unidad 6">Unidad 6</a><ul class="nav">
+<li><a href="#Gestión-de-Configuración-del-Software" title="Gestión de Configuración del Software:">Gestión de Configuración del Software:</a><ul class="nav">
+<li><a href="#¿Qué-significa-la-integridad-de-un-producto-software" title="¿Qué significa la integridad de un producto software?">¿Qué significa la integridad de un producto software?</a></li>
+<li><a href="#Línea-base" title="Línea base:">Línea base:</a></li>
+<li><a href="#Versión" title="Versión:">Versión:</a></li>
+<li><a href="#Cadena-de-Revisión" title="Cadena de Revisión:">Cadena de Revisión:</a></li>
+<li><a href="#Control-de-cambios" title="Control de cambios:">Control de cambios:</a></li>
+<li><a href="#Comité-de-cambios" title="Comité de cambios:">Comité de cambios:</a></li>
+<li><a href="#Auditoria-de-la-configuración" title="Auditoria de la configuración:">Auditoria de la configuración:</a></li>
+<li><a href="#Informes-de-estado" title="Informes de estado:">Informes de estado:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Unidad-7" title="Unidad 7">Unidad 7</a><ul class="nav">
+<li><a href="#Calidad" title="Calidad:">Calidad:</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
